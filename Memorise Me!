@@ -1,0 +1,23 @@
+//https://www.hackerearth.com/practice/data-structures/arrays/1-d/practice-problems/algorithm/memorise-me/?utm_source=website&amp
+#include<stdio.h>
+void main()
+{
+    int n,q,a,b;
+    scanf("%d",&n);
+    int num[100000];
+    for(int i=0;i<n;i++)
+    {
+     scanf("%d",&q);
+     num[q]++;
+    }
+    scanf("%d",&a);
+    while(a--)
+    {
+        scanf("%d",&b);
+        if(num[b])
+        printf("%d\n",num[b]);
+        else
+        printf("NOT PRESENT\n");
+
+    }
+}
