@@ -21,3 +21,27 @@ void main()
 
     }
 }
+
+//C++ SOLUTION
+#include<iostream.h>
+void main()
+{
+    int n,q,a,b;
+    cin>>n; 
+    int num[100000];
+    for(int i=0;i<n;i++)
+    {
+     cin>>q;
+     num[q]++;
+    }
+    cin>>a;
+    while(a--)
+    {
+        cin>>b;
+        if(num[b])
+        cout<<num[b]<<"\n";
+        else
+        cout<<"NOT PRESENT"<<"\n";
+    }
+}
+
